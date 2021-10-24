@@ -8,7 +8,7 @@ using namespace std;
 // Return array of numbers that sum to target_sum,
 // where each array element is contained in the given array arr.
 
-vector<int> How_Sum(const int target_sum, const vector<int> &arr, unordered_map<int, vector<int>> &cache)
+vector<int> Best_Sum(const int target_sum, const vector<int> &arr, unordered_map<int, vector<int>> &cache)
 {
     if (target_sum == 0)
     {   return vector<int> {};  } 
@@ -17,30 +17,30 @@ vector<int> How_Sum(const int target_sum, const vector<int> &arr, unordered_map<
     if (cache.find(target_sum) != cache.end())
         {   return cache.at(target_sum);    }
         
-    int remainder;
-    vector<int> result, null = {-1};
+    int remainder; 
+    vector<int> result, null = {-1}, shortest_path = {-1};
     for (auto i : arr)
     {
         remainder = target_sum - i;
-        result = How_Sum(remainder, arr, cache);
+        result = Best_Sum(remainder, arr, cache);
         if (result != null)
         {   
-            result.push_back(i); 
-            cache[target_sum] = result; 
-            return result; 
-        } 
+            result.push_back(i);
+            if (shortest_path == null || result.size() < shortest_path.size())
+            {   shortest_path = result; }
+        }
     }
-    cache[target_sum] = null;
-    return null;
+    cache[target_sum] = shortest_path;
+    return shortest_path;
 }
 
 int main()
 {
-    int sum = 36;
-    vector<int> row = {8, 9, 3, 6, 15};
+    int sum = 8;
+    vector<int> row = {1, 4, 5};
     unordered_map<int, vector<int>> record;
 
-    for (auto i : How_Sum(sum, row, record))
+    for (auto i : Best_Sum(sum, row, record))
     {   cout << i << " ";   }
     cout << endl << endl;
 
