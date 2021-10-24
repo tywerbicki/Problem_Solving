@@ -7,3 +7,7 @@ Design a function that takes in a 2-D array where each entry is the number of un
 ## How Sum
 
 Design a function that takes in a `target sum` and a vector of positive integers, and returns a vector that sums to the target sum using only elements present in the provided vector of positive integers. Returns `-1` if `target sum` is unattainable.
+
+## Best Sum
+
+Identical to 'How Sum', except returns the vector with the least number of elements.
