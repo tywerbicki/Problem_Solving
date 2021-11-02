@@ -15,3 +15,12 @@ Identical to 'How Sum', except returns the vector with the least number of eleme
 ## Find Word
 
 Design a function that takes in a `target word` and a vector of strings, and returns true if the strings in the vector can be arranged in any way to spell the `target word`, else it returns false.
+
+## Undirected Path
+
+Design a function that takes in an edge list of an undirected graph, a start node, and a finish node, and returns true if it is possible to travel from the starting node to the finish node, else it returns false.
+
+## Count Islands
+
+Design a function that takes in an adjacency list of a graph and returns the number of "islands" of the graph.
+
