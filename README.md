@@ -20,7 +20,14 @@ Design a function that takes in a `target word` and a vector of strings, and ret
 
 Design a function that takes in an edge list of an undirected graph, a start node, and a finish node, and returns true if it is possible to travel from the starting node to the finish node, else it returns false.
 
-## Count Islands
+## Count Islands (C++)
 
 Design a function that takes in an adjacency list of a graph and returns the number of "islands" of the graph.
 
+## Largest Island
+
+Design a function that takes in an adjacency list of a graph and return the number of nodes that comprise the largest island.
+
+## Shortest Path
+
+Design a function that takes in an adjacency list of a graph, a start node, and an end node, and return the least number of edges between the start node and the end node.
