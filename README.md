@@ -31,3 +31,7 @@ Design a function that takes in an adjacency list of a graph and return the numb
 ## Shortest Path
 
 Design a function that takes in an adjacency list of a graph, a start node, and an end node, and return the least number of edges between the start node and the end node.
+
+## Count Islands (Python)
+
+Design a function that takes in a 2-D array of L's and W's (L = land & W = water), and return the number of islands.
