@@ -35,3 +35,8 @@ Design a function that takes in an adjacency list of a graph, a start node, and 
 ## Count Islands (Python)
 
 Design a function that takes in a 2-D array of L's and W's (L = land & W = water), and return the number of islands.
+
+## Minimum Island
+
+Design a function that takes in a 2-D array of L's and W's, and return the size of the smallest island.
+
