@@ -40,3 +40,7 @@ Design a function that takes in a 2-D array of L's and W's (L = land & W = water
 
 Design a function that takes in a 2-D array of L's and W's, and return the size of the smallest island.
 
+## Navigate Dungeon
+
+Design a function that takes in a map of a dungeon (see code) and returns the number of moves required to escape the dungeon if possible, else return -1. The problem is solved using a breadth-first search. 
+
