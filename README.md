@@ -44,3 +44,7 @@ Design a function that takes in a 2-D array of L's and W's, and return the size 
 
 Design a function that takes in a map of a dungeon (see code) and returns the number of moves required to escape the dungeon if possible, else return -1. The problem is solved using a breadth-first search. 
 
+## Navigate Dungeon (mod)
+
+Exactly the same as the previous function, except returns the actual shortest path travelled, and not the number of moves.
+
