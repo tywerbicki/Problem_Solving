@@ -36,6 +36,10 @@ Design a function that takes in an adjacency list of a graph and returns the num
 
 Design a function that takes in an edge list of an undirected graph, a start node, and a finish node, and returns true if it is possible to travel from the starting node to the finish node, else it returns false.
 
+## Max Root to Leaf
+
+Design a function that takes in a binary tree and returns the largest sum possible by traveling root to leaf and summing the values at each node.
+
 ## Find Word
 
 Design a function that takes in a `target word` and a vector of strings, and returns true if the strings in the vector can be arranged in any way to spell the `target word`, else it returns false.
